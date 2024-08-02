@@ -53,43 +53,109 @@ The analysis is based on a synthetic customer transaction dataset used to perfor
 | `Frequency`        | Total number of purchases       | Integer   | 15            |
 | `Monetary`         | Total spent by the customer     | Float     | 3750.00       |
 
-## Visualization
 
-### 1. Customer Segmentation Overview
+## Visualizations
 
-<div align="center">
-    <img width="600" alt="Customer Segmentation Overview" src="https://github.com/crishN144/Customer-Segmentation-RFM-Dashboard/assets/customer-segmentation-overview.png">
-    <p><strong>Customer Segmentation Overview</strong></p>
-</div>
-
-- **Purpose**: Visualizes overall distribution of customer segments based on RFM metrics.
-
-### 2. Recency Distribution
+### 1. RFM Value Segment Distribution
 
 <div align="center">
-    <img width="600" alt="Recency Distribution" src="https://github.com/crishN144/Customer-Segmentation-RFM-Dashboard/assets/recency-distribution.png">
-    <p><strong>Recency Distribution</strong></p>
+    <img width="697" alt="RFM Value Segment Distribution" src="https://github.com/user-attachments/assets/3b1abfd0-72c5-4ebf-8ca0-677a1c5dc9b0">
+    <p><strong>Distribution of Customers Across RFM Value Segments</strong></p>
 </div>
 
-- **Purpose**: Shows how recent customer interactions are distributed across different segments.
+#### Description:
+This bar chart illustrates the distribution of customers across different RFM value segments. The analysis reveals that:
 
-### 3. Frequency Distribution
+- **Low-Value segment** has the highest number of customers
+- **Mid-Value segment** follows closely behind
+- **High-Value segment** has the least number of customers
+
+This distribution provides insights into the overall value composition of the customer base.
+
+### 2. RFM Customer Segments by Value
 
 <div align="center">
-    <img width="600" alt="Frequency Distribution" src="https://github.com/crishN144/Customer-Segmentation-RFM-Dashboard/assets/frequency-distribution.png">
-    <p><strong>Frequency Distribution</strong></p>
+    <img width="688" alt="RFM Customer Segments by Value" src="https://github.com/user-attachments/assets/e6a74fa9-3589-46ec-914d-e4f99ba63e4d">
+    <p><strong>Treemap of RFM Customer Segments Across Value Categories</strong></p>
 </div>
 
-- **Purpose**: Illustrates the frequency of customer transactions across various segments.
+#### Description:
+This treemap visualizes the distribution of RFM customer segments across different value categories. Key observations include:
 
-### 4. Monetary Value Distribution
+- **Low-Value category** is dominated by "At Risk Customers" and "Can't Lose" segments
+- **Mid-Value category** is primarily composed of "Potential Loyalists"
+- **High-Value category** includes both "Potential Loyalists" and "Champions"
+
+This visualization helps in understanding the composition of each value category and identifying target segments for marketing strategies.
+
+### 3. Correlation Matrix of RFM Values within Champions Segment
 
 <div align="center">
-    <img width="600" alt="Monetary Value Distribution" src="https://github.com/crishN144/Customer-Segmentation-RFM-Dashboard/assets/monetary-value-distribution.png">
-    <p><strong>Monetary Value Distribution</strong></p>
+    <img width="713" alt="Correlation Matrix of RFM Values within Champions Segment" src="https://github.com/user-attachments/assets/446b6cf9-5de6-41ee-943a-1a58a269a3d2">
+    <p><strong>Heatmap Showing Correlations Between RFM Metrics for Champions</strong></p>
 </div>
 
-- **Purpose**: Displays the distribution of total spending across customer segments.
+#### Description:
+This heatmap displays the correlation between Recency, Frequency, and Monetary scores within the Champions segment. Notable findings include:
+
+- **Strong positive correlation** between Frequency and Monetary scores
+- **Moderate negative correlation** between Recency and both Frequency and Monetary scores
+
+These correlations provide insights into the behavior patterns of high-value customers.
+
+### 4. Comparison of RFM Segments
+
+<div align="center">
+    <img width="650" alt="Comparison of RFM Segments" src="https://github.com/user-attachments/assets/afcd321e-5353-4bd8-8c8b-f4b07610e4b7">
+    <p><strong>Bar Chart Comparing Customer Counts Across RFM Segments</strong></p>
+</div>
+
+#### Description:
+This bar chart compares the number of customers in each RFM segment. Key insights include:
+
+- **"Potential Loyalists"** form the largest segment
+- **"At Risk Customers"** and **"Can't Lose"** segments have similar sizes
+- **"Champions"** represent the smallest segment
+
+This comparison helps in prioritizing marketing efforts and resource allocation across different customer segments.
+
+### 5. Comparison of RFM Segments based on Recency, Frequency, and Monetary Scores
+
+<div align="center">
+    <img width="699" alt="Comparison of RFM Segments based on Recency, Frequency, and Monetary Scores" src="https://github.com/user-attachments/assets/83ef9126-c651-4a9b-b308-3f0585a0db46">
+    <p><strong>Grouped Bar Chart Showing RFM Scores Across Customer Segments</strong></p>
+</div>
+
+#### Description:
+This grouped bar chart compares the average Recency, Frequency, and Monetary scores across different RFM segments. Notable observations include:
+
+- **"Champions"** have high scores across all three metrics
+- **"Potential Loyalists"** show high Recency but lower Frequency and Monetary scores
+- **"Lost"** customers have consistently low scores across all metrics
+
+
+### 6. RFM Analysis Dashboard
+
+<div align="center">
+    <img width="710" alt="RFM Analysis Dashboard" src="https://github.com/user-attachments/assets/14ba1c14-3a70-43ec-9942-15d59d783fd0">
+    <p><strong>Interactive RFM Analysis Dashboard</strong></p>
+</div>
+
+#### Description:
+This image showcases the final interactive RFM Analysis Dashboard created using Dash. The dashboard provides a comprehensive view of customer segmentation based on RFM scores. Key features include:
+
+- **Title and Description**: Clearly labeled "RFM Analysis Dashboard" with a brief explanation of its purpose.
+- **Dropdown Menu**: Allows users to select different chart types to visualize various aspects of the RFM analysis.
+- **Interactive Graph Area**: Displays the selected chart, enabling exploration of different visualizations of the RFM data.
+- **Chart Options**: Includes various chart types such as:
+  - RFM Value Segment Distribution
+  - Distribution of RFM Values within Customer Segment
+  - Correlation Matrix of RFM Values within Champions Segment
+  - Comparison of RFM Segments
+  - Comparison of RFM Segments based on Scores
+
+This interactive dashboard enables users to **dynamically explore and analyze customer segments** based on their RFM scores, providing valuable insights for marketing strategies and customer relationship management.
+
 
 ## Conclusion
 
