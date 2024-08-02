@@ -162,9 +162,11 @@ This interactive dashboard enables users to **dynamically explore and analyze cu
 The RFM Analytics Dashboard provides a powerful tool for businesses to segment their customers and gain insights into their purchasing behavior. By utilizing RFM metrics, businesses can better understand customer value and tailor their marketing strategies accordingly.
 
 
+Certainly! Here’s the updated **How to Use** section for your README file:
+
 ## How to Use
 
-To explore and utilize this project:
+To explore and utilize this project, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
@@ -173,7 +175,7 @@ To explore and utilize this project:
    ```
 
 2. **Set Up the Environment**:
-   - Create and activate a virtual environment:
+   - Create a virtual environment:
      ```bash
      python -m venv venv
      source venv/bin/activate  # On Windows use `venv\Scripts\activate`
@@ -184,18 +186,22 @@ To explore and utilize this project:
      ```
 
 3. **Run the Dashboard**:
-   - Launch the dashboard using Dash:
+   - Open Jupyter Notebook:
      ```bash
-     python app.py
+     jupyter notebook
      ```
-   - Open a web browser and go to `http://127.0.0.1:8050/` to view the interactive dashboard.
+   - Navigate to and open the notebook:
+     - `RFM_Analysis_Dashboard.ipynb`
+   - Run the cells sequentially to launch and interact with the dashboard.
 
-4. **Explore the Dashboard**:
-   - Use the interactive charts and visualizations to analyze customer segments and behavior based on RFM scores.
+4. **Explore the Results**:
+   - Utilize the interactive charts and visualizations to analyze customer segments and their behaviors.
 
 5. **Modify and Extend**:
-   - Customize the dashboard, add new features, or apply the analysis to different datasets by editing `app.py` and other related files.
-  
+   - Customize the dashboard, add new features, or adapt the analysis for different datasets as needed.
+
+This setup will enable you to fully utilize and explore the RFM Analysis Dashboard, providing insights into customer segmentation and behavior.
+
    
 ## Future Work
 
