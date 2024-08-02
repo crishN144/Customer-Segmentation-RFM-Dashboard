@@ -161,6 +161,7 @@ This interactive dashboard enables users to **dynamically explore and analyze cu
 
 The RFM Analytics Dashboard provides a powerful tool for businesses to segment their customers and gain insights into their purchasing behavior. By utilizing RFM metrics, businesses can better understand customer value and tailor their marketing strategies accordingly.
 
+
 ## How to Use
 
 To explore and utilize this project:
@@ -172,7 +173,7 @@ To explore and utilize this project:
    ```
 
 2. **Set Up the Environment**:
-   - Create a virtual environment:
+   - Create and activate a virtual environment:
      ```bash
      python -m venv venv
      source venv/bin/activate  # On Windows use `venv\Scripts\activate`
@@ -183,20 +184,19 @@ To explore and utilize this project:
      ```
 
 3. **Run the Dashboard**:
-   - Open Jupyter Notebook:
+   - Launch the dashboard using Dash:
      ```bash
-     jupyter notebook
+     python app.py
      ```
-   - Navigate to and open the notebook:
-     - `RFM_Analysis_Dashboard.ipynb`
-   - Run the cells sequentially to see the interactive dashboard.
+   - Open a web browser and go to `http://127.0.0.1:8050/` to view the interactive dashboard.
 
-4. **Explore the Results**:
-   - Use the interactive charts and visualizations to analyze customer segments and behavior.
+4. **Explore the Dashboard**:
+   - Use the interactive charts and visualizations to analyze customer segments and behavior based on RFM scores.
 
 5. **Modify and Extend**:
-   - Feel free to customize the dashboard, add new features, or apply the analysis to different datasets.
-
+   - Customize the dashboard, add new features, or apply the analysis to different datasets by editing `app.py` and other related files.
+  
+   
 ## Future Work
 
 1. **Advanced Segmentation Techniques**:
